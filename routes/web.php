@@ -12,14 +12,14 @@
 
 
 Route::get('/', function () {
-    //return view('inicio');
 
+    return view('inicio');
+    //return "Hola desde la pág de inicio";
 });
 
 
 Route::get('crear', function () {
-    //return view('crear');
-    return "Hola desde la pág de inicio";
+    //return view('crear');    
 });
 
 Route::get('consultar/{nombre?}', function ($nombre = "Invitado") {
