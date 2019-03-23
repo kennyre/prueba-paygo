@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 
 Route::get('crear', function () {
-    //return view('crear');    
+    return view('crear');    
 });
 
 Route::get('consultar/{nombre?}', function ($nombre = "Invitado") {
