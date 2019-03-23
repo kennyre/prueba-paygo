@@ -1,10 +1,22 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
-       
+       <style>
+            
+            .active{
+                text-decoration: none;
+                color: green;
+            }
+
+            .error{
+                color: red;
+                font-size: 12px;                
+            }
+
+       </style>
         <title>Sistema Registro de Empleados  - payGO</title>
         
-
+        <link rel="shortcut icon" href="img/logo/icono.ico">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         
 
@@ -38,12 +50,27 @@
         <!-- Header Area Start -->
         <header class="top">
        
+            <?php
+                function activeMenu($url)
+                {
+                    return request()->is($url) ? 'active' : '';
+                }
+            ?>
             
-            <a class="btn btn-primary" href="/" role="button">Inicio</a>
-            <a class="btn btn-primary" href="crear" role="button">Crear Empleados</a>
-            <a class="btn btn-primary" href="consultar" role="button">Consultar Empleados</a>
-            <a class="btn btn-primary" href="actualizar" role="button">Actualizar Datos</a>
-            <a class="btn btn-primary" href="eliminar" role="button">Eliminar Empleados</a>
+            <a class="{{ activeMenu('/') }} btn btn-primary" 
+                href="{{ route('inicio') }}" role="button">Inicio</a>
+
+            <a class="{{ activeMenu('crear') }} btn btn-primary" 
+                href="{{ route('crear') }}" role="button">Crear Empleados</a>
+
+            <a class="{{ activeMenu('consultar/*') }} btn btn-primary" 
+                href="{{ route('consultar') }}" role="button">Consultar Empleados</a>
+            
+            <a class="{{ activeMenu('actualizar') }} btn btn-primary" 
+                href="{{ route('actualizar') }}" role="button">Actualizar Datos</a>
+            
+            <a class="{{ activeMenu('eliminar') }} btn btn-primary" 
+                href="{{ route('eliminar') }}" role="button">Eliminar Empleados</a>
 
             
        
@@ -94,7 +121,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <p>Copyright © <a href="https://paygo.com.co/" target="_blank">payGo</a> 2019. All Right Reserved By KRE.</p>
+                            <p>Copyright © <a href="https://paygo.com.co/" target="_blank">payGo</a> {{ date('Y') }}. All Right Reserved By KRE.</p>
                         </div>
                         <div class="footer-social" align="center">
                             <ul>

@@ -11,29 +11,16 @@
 
 
 
-Route::get('/', function () {
-
-    return view('inicio');
-    //return "Hola desde la pág de inicio";
-});
 
 
-Route::get('crear', function () {
-    return view('crear');    
-});
+Route::get('/', ['as' => 'inicio', 'uses' => 'PagesController@inicio'])->middleware('validacionesform');
 
-Route::get('consultar/{nombre?}', function ($nombre = "Invitado") {
-    //return view('consultar');    
-    return "Hola $nombre";
-})->where('nombre', "[A-Za-z]+");
+Route::get('crear', ['as' => 'crear', 'uses' => 'PagesController@crear']);
+Route::post('crear_empleado', 'PagesController@crear_empleado');
 
 
-Route::get('actualizar', function () {
-    //return view('actualizar');
-    return "Hola desde la pág de actualizar";
-});
+Route::get('consultar/{nombre?}', ['as' => 'consultar', 'uses' => 'PagesController@consultar'])->where('nombre', "[A-Za-z]+");
 
-Route::get('eliminar', function () {
-    //return view('eliminar');
-    return "Hola desde la pág de eliminar";
-});
+Route::get('actualizar', ['as' => 'actualizar', 'uses' => 'PagesController@actualizar']);
+
+Route::get('eliminar', ['as' => 'eliminar', 'uses' => 'PagesController@eliminar']);
