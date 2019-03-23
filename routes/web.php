@@ -12,5 +12,27 @@
 
 
 Route::get('/', function () {
-    return view('welcome');    
+    return view('inicio');    
+});
+
+
+Route::get('crear', function () {
+    return view('crear');    
+});
+
+Route::get('consultar/{nombre?}', function ($nombre = "Invitado") {
+    //return view('consultar');
+    //return "Hola desde la pág de consultar";
+    return "Hola $nombre";
+})->where('nombre', "[A-Za-z]+");
+
+
+Route::get('actualizar', function () {
+    //return view('actualizar');
+    return "Hola desde la pág de actualizar";
+});
+
+Route::get('eliminar', function () {
+    //return view('eliminar');
+    return "Hola desde la pág de eliminar";
 });
