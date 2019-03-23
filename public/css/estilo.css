@@ -1,0 +1,100 @@
+[css]
+label {
+display:block;
+margin-top:20px;
+letter-spacing:1px;
+}
+.formulario {
+display:block;
+margin:0 auto;
+width:510px;
+color: #666666;
+font-family:Arial;
+}
+
+header
+{
+	background:#2c3e50;
+	color: #aaa;
+}
+
+footer
+{
+	background:#2c3e50	;
+	color: #aaa;
+}
+
+
+.main
+{
+	background: #f6f6f6;
+}
+
+.row
+{
+	background: #f2f2f2;
+}
+
+.color1
+{
+	background: #34495e;
+}
+
+aside
+{
+	background: #c0392b;
+	color: #fff;
+}
+
+messages: {
+
+color: #red;
+font-family:Arial;
+}
+
+form {
+margin:0 auto;
+width:400px;
+}
+
+input, textarea {
+width:380px;
+height:27px;
+background:#666666;
+border:2px solid #f6f6f6;
+padding:10px;
+margin-top:5px;
+font-size:10px;
+color:#ffffff;
+}
+
+button {
+color:#B40404;
+}
+
+textarea {
+height:150px;
+}
+
+#submit {
+width:85px;
+height:35px;
+border:none;
+margin-top:20px;
+cursor:pointer;
+}
+
+.panel-red{
+	background:#a71f00;
+	color:#fff;
+}
+
+.panel-white{
+	background: #fff !important;
+    color: #646464 !important;
+    border: 0px solid #fff !important;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.3);
+    box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.3);
+}
+[/css]
