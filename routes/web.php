@@ -12,17 +12,18 @@
 
 
 Route::get('/', function () {
-    return view('inicio');    
+    //return view('inicio');
+
 });
 
 
 Route::get('crear', function () {
-    return view('crear');    
+    //return view('crear');
+    return "Hola desde la pág de inicio";
 });
 
 Route::get('consultar/{nombre?}', function ($nombre = "Invitado") {
-    //return view('consultar');
-    //return "Hola desde la pág de consultar";
+    //return view('consultar');    
     return "Hola $nombre";
 })->where('nombre', "[A-Za-z]+");
 
