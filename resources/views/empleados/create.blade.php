@@ -6,20 +6,10 @@
 @section('contenido')
 
 
-<html>
-	<title>Formulario Registro de Datos</title>
 
-<head>
-
-	
-</head>
-
-
-
-<body>
 
 	<h1>Formulario para creación de Empleados</h1>
-	<div align="left">
+	<div>
 
 		@if(session()->has('info') )
 
@@ -27,7 +17,7 @@
 
 		@else
 
-			<form action="crear_empleado" method="post">
+			<form action="{{ route('empleados.store') }}" method="post">
 				
 				
 				{!! csrf_field() !!}
@@ -61,19 +51,19 @@
 				<label for="subcategory" class="col-xs-8 col-sm-2 col-md-2 col-lg-2">Tipo de Documento:</label>
 
 				<div class="col-xs-8 col-sm-3 col-md-3 col-lg-3	">
-					<select name="id_tipo_doc" id="id_tipo_doc" required value="{{ old('id_tipo_doc') }}" class="form-control input-sm">
+					<select name="tipo_doc" id="tipo_doc" required value="{{ old('id_tipo_doc') }}" class="form-control input-sm">
 					
 						<option value="0">Seleccione tipo documento</option>
-						<option value="1">CC - Cédula de Ciudadania</option>
-						<option value="1">CI - Cédula de Identidad</option>
-						<option value="2">TI - Tarjeta de Identidad</option>
-						<option value="3">TP - Tarjeta de Pasaporte</option>
-						<option value="4">RC - Registro Civil</option>
-						<option value="5">CE - Cédula de Extranjeria</option>
-						<option value="6">CI - Carné de Identidad</option>
-						<option value="6">DNI - Doc. Nacional de Identidad</option>
-						<option value="6">DUI - Documento Unico de Identidad</option>
-						<option value="6">ID - Identificacion Oficial</option>
+						<option value="CC">CC - Cédula de Ciudadania</option>
+						<option value="CI">CI - Cédula de Identidad</option>
+						<option value="TI">TI - Tarjeta de Identidad</option>
+						<option value="TP">TP - Tarjeta de Pasaporte</option>
+						<option value="RC">RC - Registro Civil</option>
+						<option value="CE">CE - Cédula de Extranjeria</option>
+						<option value="CI">CI - Carné de Identidad</option>
+						<option value="DNI">DNI - Doc. Nacional de Identidad</option>
+						<option value="DUI">DUI - Documento Unico de Identidad</option>
+						<option value="IO">IO - Identificacion Oficial</option>
 														
 					</select>
 
@@ -84,7 +74,7 @@
 				<label for="subcategory" class="control-label col-xs-4 col-sm-3 col-md-3 col-lg-3">Documento de Identidad:</label>
 
 				<div class="col-xs-8 col-sm-3 col-md-3 col-lg-3" aling="left">
-					<input type="text" name="cedula" id="cedula" value="{{ old('cedula') }}" class="form-control positive-integer input-sm add-bottom-xs"  />
+					<input type="text" name="cedula" id="cedula" value="{{ old('cedula') }}" class="form-control positive-integer input-sm add-bottom-xs" required/>
 
 					{!! $errors->first('cedula', '<span class=error>:message</span>') !!}
 
@@ -102,10 +92,10 @@
 				</div>
 				
 				
-				<label for="s_apellido_cliente" class="control-label  col-xs-4 col-sm-2 col-md-2 col-lg-2">URL Foto:</label>
+				<label for="s_apellido_cliente" class="control-label  col-xs-4 col-sm-2 col-md-2 col-lg-2">Cargo:</label>
 
 				<div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-					<input type="file" name="url_foto" id="url_foto" value="{{ old('url_foto') }}" class="form-control input-sm add-bottom-xs add-bottom-sm" placeholder=""/>
+					<input type="text" name="cargo" id="cargo" value="{{ old('cargo') }}" class="form-control input-sm add-bottom-xs add-bottom-sm" required/>
 				</div>
 				
 			
@@ -134,10 +124,10 @@
 				
 				
 				
-				<br><br><br><br><br><br>
-				<div class="sent" align="center">
+				<br><br><br><br>
+				<div class="sent">
 					<!-- BOTON PARA SIMULAR EL ENVIO -->
-					<button name='enviar' id='enviar' class="btn-approved">Enviar</button>
+					<button name='enviar' id='enviar' class="btn btn-primary">Enviar</button>
 				</div>
 				
 			</form>
@@ -147,15 +137,7 @@
 		
 	</div>
 
-	<script type="text/javascript" src="js/jquery.numeric.js"></script>
-	<script type="text/javascript" src="js/jsnumeric.js"></script>
-</body>
-
-</html>
-
-
-
-
+	
 
 
 

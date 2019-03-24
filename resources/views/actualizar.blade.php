@@ -6,7 +6,7 @@
 @section('contenido')
 
 
-	<h1>Actualizar Clientes</h1>
+	<h1>Actualizar Empleados</h1>
 
 
 @stop

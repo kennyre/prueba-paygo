@@ -43,9 +43,7 @@
 
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      
 
         <!-- Header Area Start -->
         <header class="top">
@@ -60,11 +58,11 @@
             <a class="{{ activeMenu('/') }} btn btn-primary" 
                 href="{{ route('inicio') }}" role="button">Inicio</a>
 
-            <a class="{{ activeMenu('crear') }} btn btn-primary" 
-                href="{{ route('crear') }}" role="button">Crear Empleados</a>
+            <a class="{{ activeMenu('empleados/create') }} btn btn-primary" 
+                href="{{ route('empleados.create') }}" role="button">Crear Empleados</a>
 
-            <a class="{{ activeMenu('consultar/*') }} btn btn-primary" 
-                href="{{ route('consultar') }}" role="button">Consultar Empleados</a>
+            <a class="{{ activeMenu('empleados') }} btn btn-primary" 
+                href="{{ route('empleados.index') }}" role="button">Consultar Empleados</a>
             
             <a class="{{ activeMenu('actualizar') }} btn btn-primary" 
                 href="{{ route('actualizar') }}" role="button">Actualizar Datos</a>
@@ -114,7 +112,7 @@
 
 
 
-
+        <br><br>
         <!-- Footer Start -->
         <footer class="footer-area">
             <div class="footer-bottom text-center">
@@ -123,11 +121,15 @@
                         <div class="col-xs-12">
                             <p>Copyright © <a href="https://paygo.com.co/" target="_blank">payGo</a> {{ date('Y') }}. All Right Reserved By KRE.</p>
                         </div>
-                        <div class="footer-social" align="center">
+                        <!--<div class="footer-social" align="center">
                             <ul>
-                                <li><a href="https://www.facebook.com/groups/73854311476/?ref=group_header"><i class="zmdi zmdi-facebook"></i></a></li>
+                                <li>
+                                    <a href="https://www.facebook.com/groups/73854311476/?ref=group_header">
+                                        <i class="zmdi zmdi-facebook"></i>
+                                    </a>
+                                </li>
                             </ul>    
-                        </div>
+                        </div>-->
                     </div>
                 </div>    
             </div>

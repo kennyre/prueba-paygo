@@ -22,8 +22,7 @@ class PagesController extends Controller
 
 	public function inicio()
 	{
-		/*return ['key' => ['value1','value2']];*/
-		//return response('contenido');
+		
 		return view('inicio');
 	}
 	

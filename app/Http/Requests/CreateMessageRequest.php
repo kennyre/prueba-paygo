@@ -27,10 +27,10 @@ class CreateMessageRequest extends FormRequest
             //
             'nombre' => 'required',
             'apellidos' => 'required',
-            //'id_tipo_doc' => 'required',
+            'id_tipo_doc' => 'required',
             'cedula' => 'required',
             'fecha_nacimiento' => 'required',
-            //'url_foto' => 'required',
+            'url_foto' => 'required',
             'telefono' => 'required',
             'email' => 'required|email'
         ];
