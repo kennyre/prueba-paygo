@@ -64,12 +64,14 @@
             <a class="{{ activeMenu('empleados') }} btn btn-primary" 
                 href="{{ route('empleados.index') }}" role="button">Consultar Empleados</a>
             
+
+            <!--
             <a class="{{ activeMenu('actualizar') }} btn btn-primary" 
                 href="{{ route('actualizar') }}" role="button">Actualizar Datos</a>
             
             <a class="{{ activeMenu('eliminar') }} btn btn-primary" 
                 href="{{ route('eliminar') }}" role="button">Eliminar Empleados</a>
-
+            -->
             
        
 
