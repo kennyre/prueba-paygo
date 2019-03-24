@@ -47,6 +47,9 @@ class EmpleadosController extends Controller
         
         //Realizamos un insert a la BD ppor medio del query builder de Laravel
 
+        return "Almacenando...";
+
+        /*
         DB::table('empleado')->insert([
             "nombre"            => $request->input('nombre'),
             "apellidos"         => $request->input('apellidos'),
@@ -62,6 +65,7 @@ class EmpleadosController extends Controller
         ]);
 
         return redirect()->route('empleados.index');
+        */
 
     }
 
