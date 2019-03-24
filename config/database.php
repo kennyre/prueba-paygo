@@ -1,5 +1,5 @@
 <?php
-$DATABASE_URL = parse_url('postgres://osnxsvgdvdpwen:f40b7185e0d9d5e66330cf3341acb26fa7e0b2a034986f7971fb12662228eb2b@ec2-75-101-131-79.compute-1.amazonaws.com:5432/d51v73ki15cul5');
+//$DATABASE_URL = parse_url('postgres://osnxsvgdvdpwen:f40b7185e0d9d5e66330cf3341acb26fa7e0b2a034986f7971fb12662228eb2b@ec2-75-101-131-79.compute-1.amazonaws.com:5432/d51v73ki15cul5');
 return [
 
     /*
@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'pgsql'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
