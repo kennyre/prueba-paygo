@@ -51,7 +51,7 @@
 				<label for="subcategory" class="col-xs-8 col-sm-2 col-md-2 col-lg-2">Tipo de Documento:</label>
 
 				<div class="col-xs-8 col-sm-3 col-md-3 col-lg-3	">
-					<select name="tipo_doc" id="tipo_doc" required value="{{ old('id_tipo_doc') }}" class="form-control input-sm">
+					<select name="tipo_doc" id="tipo_doc" required value="{{ old('tipo_doc') }}" class="form-control input-sm">
 					
 						<option value="0">Seleccione tipo documento</option>
 						<option value="CC">CC - Cédula de Ciudadania</option>

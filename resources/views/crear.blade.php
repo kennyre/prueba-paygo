@@ -61,19 +61,19 @@
 				<label for="subcategory" class="col-xs-8 col-sm-2 col-md-2 col-lg-2">Tipo de Documento:</label>
 
 				<div class="col-xs-8 col-sm-3 col-md-3 col-lg-3	">
-					<select name="id_tipo_doc" id="id_tipo_doc" required value="{{ old('id_tipo_doc') }}" class="form-control input-sm">
+					<select name="tipo_doc" id="itipo_doc" required value="{{ old('tipo_doc') }}" class="form-control input-sm">
 					
 						<option value="0">Seleccione tipo documento</option>
-						<option value="1">CC - Cédula de Ciudadania</option>
-						<option value="1">CI - Cédula de Identidad</option>
-						<option value="2">TI - Tarjeta de Identidad</option>
-						<option value="3">TP - Tarjeta de Pasaporte</option>
-						<option value="4">RC - Registro Civil</option>
-						<option value="5">CE - Cédula de Extranjeria</option>
-						<option value="6">CI - Carné de Identidad</option>
-						<option value="6">DNI - Doc. Nacional de Identidad</option>
-						<option value="6">DUI - Documento Unico de Identidad</option>
-						<option value="6">ID - Identificacion Oficial</option>
+						<option value="CC">CC - Cédula de Ciudadania</option>
+						<option value="CI">CI - Cédula de Identidad</option>
+						<option value="TI">TI - Tarjeta de Identidad</option>
+						<option value="TP">TP - Tarjeta de Pasaporte</option>
+						<option value="RC">RC - Registro Civil</option>
+						<option value="CE">CE - Cédula de Extranjeria</option>
+						<option value="CI">CI - Carné de Identidad</option>
+						<option value="DNI">DNI - Doc. Nacional de Identidad</option>
+						<option value="DUI">DUI - Documento Unico de Identidad</option>
+						<option value="IO">IO - Identificacion Oficial</option>
 														
 					</select>
 
@@ -102,10 +102,10 @@
 				</div>
 				
 				
-				<label for="s_apellido_cliente" class="control-label  col-xs-4 col-sm-2 col-md-2 col-lg-2">URL Foto:</label>
+				<label for="s_apellido_cliente" class="control-label  col-xs-4 col-sm-2 col-md-2 col-lg-2">Cargo:</label>
 
 				<div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
-					<input type="file" name="url_foto" id="url_foto" value="{{ old('url_foto') }}" class="form-control input-sm add-bottom-xs add-bottom-sm" placeholder=""/>
+					<input type="file" name="cargo" id="cargo" value="{{ old('cargo') }}" class="form-control input-sm add-bottom-xs add-bottom-sm" placeholder=""/>
 				</div>
 				
 			
