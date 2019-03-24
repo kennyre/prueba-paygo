@@ -28,6 +28,7 @@ class EmpleadosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    //Llama a la vista q despliega form para crear empleados
     public function create()
     {
         //
@@ -140,6 +141,7 @@ class EmpleadosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //Eliminar un registro por id
     public function destroy($id)
     {
         //

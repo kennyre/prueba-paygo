@@ -45,7 +45,7 @@
     <body>
       
 
-        <!-- Header Area Start -->
+        <!-- Inicio de la Cabecera - Barra de Navegación -->
         <header class="top">
        
             <?php
@@ -64,21 +64,10 @@
             <a class="{{ activeMenu('empleados') }} btn btn-primary" 
                 href="{{ route('empleados.index') }}" role="button">Consultar Empleados</a>
             
-
-            <!--
-            <a class="{{ activeMenu('actualizar') }} btn btn-primary" 
-                href="{{ route('actualizar') }}" role="button">Actualizar Datos</a>
-            
-            <a class="{{ activeMenu('eliminar') }} btn btn-primary" 
-                href="{{ route('eliminar') }}" role="button">Eliminar Empleados</a>
-            -->
-            
-       
-
-         
+        
 
         </header>
-        <!-- Header Area End -->
+        <!-- Fin de la Cabecera -->
 
 
 
@@ -103,7 +92,6 @@
 
 
 
-
 <!-- FIN CONTENIDO -->
 
 
@@ -123,15 +111,7 @@
                         <div class="col-xs-12">
                             <p>Copyright © <a href="https://paygo.com.co/" target="_blank">payGo</a> {{ date('Y') }}. All Right Reserved By KRE.</p>
                         </div>
-                        <!--<div class="footer-social" align="center">
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/groups/73854311476/?ref=group_header">
-                                        <i class="zmdi zmdi-facebook"></i>
-                                    </a>
-                                </li>
-                            </ul>    
-                        </div>-->
+                        
                     </div>
                 </div>    
             </div>

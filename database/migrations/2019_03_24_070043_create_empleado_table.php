@@ -11,6 +11,7 @@ class CreateEmpleadoTable extends Migration
      *
      * @return void
      */
+    //Migración del esquema de la tabla empleado
     public function up()
     {
         Schema::create('empleado', function (Blueprint $table) {
