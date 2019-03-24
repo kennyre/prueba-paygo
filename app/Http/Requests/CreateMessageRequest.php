@@ -30,7 +30,7 @@ class CreateMessageRequest extends FormRequest
             'tipo_doc' => 'required',
             'cedula' => 'required',
             'fecha_nacimiento' => 'required',
-            'url_foto' => 'required',
+            'cargo' => 'required',
             'telefono' => 'required',
             'email' => 'required|email'
         ];

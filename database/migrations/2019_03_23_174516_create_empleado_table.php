@@ -19,10 +19,10 @@ class CreateEmpleadoTable extends Migration
             $table->string('nombre');
             $table->string('apellidos');
             $table->string('tipo_doc');
-            $table->integer('cedula');
+            $table->string('cedula');
             $table->date('fecha_nacimiento');
-            $table->text('url_foto');
-            $table->integer('telefono');
+            $table->string('cargo');
+            $table->string('telefono');
             $table->string('email');
 
             $table->timestamps();
