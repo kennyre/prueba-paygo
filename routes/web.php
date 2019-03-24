@@ -13,9 +13,9 @@
 
 
 //Diseño inicial de rutas:
-/*
-Route::get('/', ['as' => 'inicio', 'uses' => 'PagesController@inicio']);
 
+Route::get('/', ['as' => 'inicio', 'uses' => 'PagesController@inicio']);
+/*
 Route::get('crear', ['as' => 'crear', 'uses' => 'PagesController@crear']);
 
 Route::post('crear_empleado', 'PagesController@crear_empleado');
@@ -37,6 +37,7 @@ Route::get('eliminar', ['as' => 'eliminar', 'uses' => 'PagesController@eliminar'
 
 //Rutas para el Controlador CRUD utilizando el query builder
 //Son las que utilizaremos en esta implementación
+
 
 //Ruta que despliega la vista que muestra el listado de empleados existente actualmente
 Route::get('empleados', ['as' => 'empleados.index', 'uses' => 'EmpleadosController@index']);
