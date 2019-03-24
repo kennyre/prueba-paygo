@@ -13,7 +13,7 @@
 
 
 
-Route::get('/', ['as' => 'inicio', 'uses' => 'PagesController@inicio'])->middleware('validacionesform');
+Route::get('/', ['as' => 'inicio', 'uses' => 'PagesController@inicio']);
 
 Route::get('crear', ['as' => 'crear', 'uses' => 'PagesController@crear']);
 Route::post('crear_empleado', 'PagesController@crear_empleado');
