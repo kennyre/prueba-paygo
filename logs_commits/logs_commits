@@ -19,3 +19,5 @@ ed69ee34b941184a7f2290fc3d11ccea9b9c3eaa cbd19d3d94a8b4f857ceba73be2ca87da48c9c0
 cbd19d3d94a8b4f857ceba73be2ca87da48c9c00 444973ca41d98cfd292d08cc06a2ef9a62bb7263 Kenny Rodriguez <kennyre8@gmail.com> 1553411519 -0500	commit: Cambios
 444973ca41d98cfd292d08cc06a2ef9a62bb7263 c12147486c6d67c1151a445969267fbfb05cc575 Kenny Rodriguez <kennyre8@gmail.com> 1553439044 -0500	commit: Agregar comentarios
 c12147486c6d67c1151a445969267fbfb05cc575 300f16c58d2b75f4a88764ce9c0f0df8765eb913 Kenny Rodriguez <kennyre8@gmail.com> 1553439484 -0500	commit: Correccion
+300f16c58d2b75f4a88764ce9c0f0df8765eb913 32166b43c8579e33f7a2a09476336ca2b5d336aa Kenny Rodriguez <kennyre8@gmail.com> 1553442321 -0500	commit: agregar logs de commits
+32166b43c8579e33f7a2a09476336ca2b5d336aa d6ea9a0a542125113ba48e448314a36eba17270e Kenny Rodriguez <kennyre8@gmail.com> 1553479473 -0500	commit: Agregar a la aplicacion backend un boton para exportar el listado de empleados en excel
