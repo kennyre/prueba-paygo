@@ -9,12 +9,14 @@
 |
 */
 
-
-
+use App\Exports\EmpleadosExport;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Http\Controllers\Controler;
 
 //Diseño inicial de rutas:
 
 Route::get('/', ['as' => 'inicio', 'uses' => 'PagesController@inicio']);
+
 /*
 Route::get('crear', ['as' => 'crear', 'uses' => 'PagesController@crear']);
 
@@ -26,10 +28,16 @@ Route::get('actualizar', ['as' => 'actualizar', 'uses' => 'PagesController@actua
 
 Route::get('eliminar', ['as' => 'eliminar', 'uses' => 'PagesController@eliminar']);
 */
+Route::get('exportar', ['as' => 'exportar', 'uses' => 'PagesController@exportar']);
+/*
+Route::get('exportar', function(){
+	return Excel::download(new EmpleadosExport, 'empleados.xlsx');
+});
+*/
 
 
 //Ruta utilizando Eloquent:
-//Route::resource('empleados', 'EmpleadosController');
+Route::resource('empleados', 'EmpleadosController');
 
 
 
@@ -38,7 +46,7 @@ Route::get('eliminar', ['as' => 'eliminar', 'uses' => 'PagesController@eliminar'
 //Rutas para el Controlador CRUD utilizando el query builder
 //Son las que utilizaremos en esta implementación
 
-
+/*
 //Ruta que despliega la vista que muestra el listado de empleados existente actualmente
 Route::get('empleados', ['as' => 'empleados.index', 'uses' => 'EmpleadosController@index']);
 
@@ -59,3 +67,4 @@ Route::put('empleados/{id}', ['as' => 'empleados.update', 'uses' => 'EmpleadosCo
 
 //Ruta que enlaza a la vista que se encarga de ejecutar la eliminación de un registro por id
 Route::delete('empleados/{id}', ['as' => 'empleados.destroy', 'uses' => 'EmpleadosController@destroy']);
+*/

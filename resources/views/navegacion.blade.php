@@ -63,6 +63,9 @@
 
             <a class="{{ activeMenu('empleados') }} btn btn-primary" 
                 href="{{ route('empleados.index') }}" role="button">Consultar Empleados</a>
+
+            <a class="{{ activeMenu('exportar') }}btn btn-primary" 
+                href="{{ route('exportar') }}" role="button">Exportar Excel</a>
             
         
 

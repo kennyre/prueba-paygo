@@ -7,6 +7,9 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreateMessageRequest;
 
+use App\Exports\EmpleadosExport;
+use Maatwebsite\Excel\Facades\Excel;
+use App\empleado;
 
 class PagesController extends Controller
 {
@@ -61,6 +64,13 @@ class PagesController extends Controller
 	public function eliminar()
 	{
 		return view('eliminar');
+	}
+
+
+	public function exportar()
+	{
+		return Excel::download(new EmpleadosExport, 'empleados.xlsx');
+		//return EmpleadosExport::all();
 	}
 
 }

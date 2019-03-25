@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use DB;
+use App\empleado;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -150,4 +151,14 @@ class EmpleadosController extends Controller
         return redirect()->route('empleados.index');
 
     }
+
+    public function exportar()
+    {
+        return Excel::download(new EmpleadosExport, 'empleados.xlsx');
+        //return EmpleadosExport::all();
+    }
+
+
+
+
 }
