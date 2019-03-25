@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 0000000000000000000000000000000000000000 cc5ee23891bfb20c58d29db9958d8eeaf055bae9 Kenny Rodriguez <kennyre8@gmail.com> 1553302706 -0500	commit (initial): Primer commit para cargar la distribución de carpetas inicial de la creación del proyecto en laravel
 cc5ee23891bfb20c58d29db9958d8eeaf055bae9 937701f929667703377c4bb3273ddd287da2aa29 Kenny Rodriguez <kennyre8@gmail.com> 1553302933 -0500	commit: Agregar el archivo Procfile para Heroku
 937701f929667703377c4bb3273ddd287da2aa29 1c3b91183732910cc2ca082c08a6675af1c9d3a3 Kenny Rodriguez <kennyre8@gmail.com> 1553304523 -0500	commit: Agregar primera vista plantilla al proyecto
@@ -20,4 +21,28 @@ cbd19d3d94a8b4f857ceba73be2ca87da48c9c00 444973ca41d98cfd292d08cc06a2ef9a62bb726
 444973ca41d98cfd292d08cc06a2ef9a62bb7263 c12147486c6d67c1151a445969267fbfb05cc575 Kenny Rodriguez <kennyre8@gmail.com> 1553439044 -0500	commit: Agregar comentarios
 c12147486c6d67c1151a445969267fbfb05cc575 300f16c58d2b75f4a88764ce9c0f0df8765eb913 Kenny Rodriguez <kennyre8@gmail.com> 1553439484 -0500	commit: Correccion
 300f16c58d2b75f4a88764ce9c0f0df8765eb913 32166b43c8579e33f7a2a09476336ca2b5d336aa Kenny Rodriguez <kennyre8@gmail.com> 1553442321 -0500	commit: agregar logs de commits
+=======
+0000000000000000000000000000000000000000 cc5ee23891bfb20c58d29db9958d8eeaf055bae9 Kenny Rodriguez <kennyre8@gmail.com> 1553302706 -0500	commit (initial): Primer commit para cargar la distribución de carpetas inicial de la creación del proyecto en laravel
+cc5ee23891bfb20c58d29db9958d8eeaf055bae9 937701f929667703377c4bb3273ddd287da2aa29 Kenny Rodriguez <kennyre8@gmail.com> 1553302933 -0500	commit: Agregar el archivo Procfile para Heroku
+937701f929667703377c4bb3273ddd287da2aa29 1c3b91183732910cc2ca082c08a6675af1c9d3a3 Kenny Rodriguez <kennyre8@gmail.com> 1553304523 -0500	commit: Agregar primera vista plantilla al proyecto
+1c3b91183732910cc2ca082c08a6675af1c9d3a3 8595b4a8fc9feae7dc52bf6e070d01a8dbaad4f9 Kenny Rodriguez <kennyre8@gmail.com> 1553306085 -0500	commit: Crear vistas y agregar rutas a las vistas
+8595b4a8fc9feae7dc52bf6e070d01a8dbaad4f9 3f2fa95b6a141ce8cb3e763fcdd64efbbcc82f4a Kenny Rodriguez <kennyre8@gmail.com> 1553307020 -0500	commit: probando vista de inicio
+3f2fa95b6a141ce8cb3e763fcdd64efbbcc82f4a 42d7af13e71eb03aeadfdacfb08b8d9b3722e680 Kenny Rodriguez <kennyre8@gmail.com> 1553307798 -0500	commit: Actualizar código para probarlo en heroku
+42d7af13e71eb03aeadfdacfb08b8d9b3722e680 dbba84029c48fda6825133f1809194a71bebe70c Kenny Rodriguez <kennyre8@gmail.com> 1553307926 -0500	commit: Agregar ruta a la vista que crea empleados
+dbba84029c48fda6825133f1809194a71bebe70c 5d385cdea4574114748d73c230870ea007cdadb8 Kenny Rodriguez <kennyre8@gmail.com> 1553372590 -0500	commit: Nuevas vistas, validaciones formulario y creacion de controladores para las peticiones REST
+5d385cdea4574114748d73c230870ea007cdadb8 f98a1e4459f5a9f3b6f5a49db22975fe557947d0 Kenny Rodriguez <kennyre8@gmail.com> 1553399033 -0500	commit: Version 1 de la aplicacion, agregar funcionalidad a los metodos de la API REST
+f98a1e4459f5a9f3b6f5a49db22975fe557947d0 5f65e1df6397a9eecdbf7ba1e7ed19a16f6cc618 Kenny Rodriguez <kennyre8@gmail.com> 1553402653 -0500	commit: Correcciones
+5f65e1df6397a9eecdbf7ba1e7ed19a16f6cc618 fcf787e9c4969875c95a714f6ef55b317b9b7d99 Kenny Rodriguez <kennyre8@gmail.com> 1553404312 -0500	commit: Correcciones
+fcf787e9c4969875c95a714f6ef55b317b9b7d99 2575bdcf89517a9b5691e74eb719cafa36c5e572 Kenny Rodriguez <kennyre8@gmail.com> 1553405517 -0500	commit: Correcciones
+2575bdcf89517a9b5691e74eb719cafa36c5e572 84c58b0ed9c9ed142c6e67e8ef378f3bd882179b Kenny Rodriguez <kennyre8@gmail.com> 1553407905 -0500	commit: Cambios
+84c58b0ed9c9ed142c6e67e8ef378f3bd882179b 0b8ffaf3e1f189fee435be1678cf75f9c850619a Kenny Rodriguez <kennyre8@gmail.com> 1553408102 -0500	commit: Cambios
+0b8ffaf3e1f189fee435be1678cf75f9c850619a f53ef210d6cab4991d409725018fa61c91188f74 Kenny Rodriguez <kennyre8@gmail.com> 1553408535 -0500	commit: Cambios
+f53ef210d6cab4991d409725018fa61c91188f74 88966ca5c1f17b6a84bfac8e5fc6603772d1fe90 Kenny Rodriguez <kennyre8@gmail.com> 1553408719 -0500	commit: Cambios
+88966ca5c1f17b6a84bfac8e5fc6603772d1fe90 ed69ee34b941184a7f2290fc3d11ccea9b9c3eaa Kenny Rodriguez <kennyre8@gmail.com> 1553409092 -0500	commit: Correccion de nombre de campos
+ed69ee34b941184a7f2290fc3d11ccea9b9c3eaa cbd19d3d94a8b4f857ceba73be2ca87da48c9c00 Kenny Rodriguez <kennyre8@gmail.com> 1553409241 -0500	commit: Correccion de nombre de campos
+cbd19d3d94a8b4f857ceba73be2ca87da48c9c00 444973ca41d98cfd292d08cc06a2ef9a62bb7263 Kenny Rodriguez <kennyre8@gmail.com> 1553411519 -0500	commit: Cambios
+444973ca41d98cfd292d08cc06a2ef9a62bb7263 c12147486c6d67c1151a445969267fbfb05cc575 Kenny Rodriguez <kennyre8@gmail.com> 1553439044 -0500	commit: Agregar comentarios
+c12147486c6d67c1151a445969267fbfb05cc575 300f16c58d2b75f4a88764ce9c0f0df8765eb913 Kenny Rodriguez <kennyre8@gmail.com> 1553439484 -0500	commit: Correccion
+300f16c58d2b75f4a88764ce9c0f0df8765eb913 32166b43c8579e33f7a2a09476336ca2b5d336aa Kenny Rodriguez <kennyre8@gmail.com> 1553442321 -0500	commit: agregar logs de commits
+>>>>>>> f2f2fc74c4b57d8180013b4b617c6e2fb266a52b
 32166b43c8579e33f7a2a09476336ca2b5d336aa d6ea9a0a542125113ba48e448314a36eba17270e Kenny Rodriguez <kennyre8@gmail.com> 1553479473 -0500	commit: Agregar a la aplicacion backend un boton para exportar el listado de empleados en excel
