@@ -11,6 +11,9 @@ use App\Exports\EmpleadosExport;
 use Maatwebsite\Excel\Facades\Excel;
 use App\empleado;
 
+use App\Imports\EmpleadosImport;
+use App\Http\Controllers\Controller;
+
 class PagesController extends Controller
 {
     //Se crean los métodos que van a reemplazar los que se enconbraban en las rutas
@@ -72,5 +75,13 @@ class PagesController extends Controller
 		return Excel::download(new EmpleadosExport, 'empleados.xlsx');
 		//return EmpleadosExport::all();
 	}
+
+
+	public function importar() 
+    {
+        Excel::import(new EmpleadosImport, 'empleados.xlsx');
+        
+        return redirect('/')->with('success', 'All good!');
+    }
 
 }

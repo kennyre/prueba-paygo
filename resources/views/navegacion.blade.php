@@ -66,6 +66,9 @@
 
             <a class="{{ activeMenu('exportar') }}btn btn-primary" 
                 href="{{ route('exportar') }}" role="button">Exportar Excel</a>
+
+            <a class="{{ activeMenu('importar') }}btn btn-primary" 
+                href="{{ route('importar') }}" role="button">Importar Excel</a>
             
         
 

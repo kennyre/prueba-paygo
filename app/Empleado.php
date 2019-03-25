@@ -8,4 +8,5 @@ class Empleado extends Model
 {
     //Asignar el verdadero nombre de la tabla.
     protected $table = 'empleado';
+    protected $fillable = ['title','body'];
 }

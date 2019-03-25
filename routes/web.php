@@ -29,6 +29,8 @@ Route::get('actualizar', ['as' => 'actualizar', 'uses' => 'PagesController@actua
 Route::get('eliminar', ['as' => 'eliminar', 'uses' => 'PagesController@eliminar']);
 */
 Route::get('exportar', ['as' => 'exportar', 'uses' => 'PagesController@exportar']);
+
+Route::get('importar', ['as' => 'importar', 'uses' => 'PagesController@importar']);
 /*
 Route::get('exportar', function(){
 	return Excel::download(new EmpleadosExport, 'empleados.xlsx');
